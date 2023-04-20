@@ -1,12 +1,10 @@
 #include<stdio.h>
-int main()
+int main(void)
 {
-	// Using sizeof operator to get the size of each type in bytes and printing it with printf
-	printf("The sizeof char is %ld bytes\n", sizeof(char));
-	printf("The sizeof int is %ld bytes\n", sizeof(int));
-	printf("The sizeof long int is %ld bytes\n", sizeof(long int));
-	printf("The sizeof float is %ld bytes\n", sizeof(float));
-	printf("The sizeof double is %ld bytes\n", sizeof(double));
-	// Return 0 to indicate successful execution of the program
-	return 0;
+	// Using sizeof operator to get the size of each type in bytes and printing it with pr	      printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
 }
