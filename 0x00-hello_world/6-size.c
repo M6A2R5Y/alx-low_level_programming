@@ -1,7 +1,8 @@
 #include<stdio.h>
 int main(void)
 {
-	// Using sizeof operator to get the size of each type in bytes and printing it with pr	      printf("Size of a char: %d byte(s)\n", sizeof(char));
+	// Using sizeof operator to get the size of each type in bytes and printing it with pr	      
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
 	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
