@@ -1,22 +1,17 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /** 
  *main indicates beginning
  * 
  * Return 0 always indicates success
- */
-
+*/
 int main(void)
 {
-	int n;
-	
+	int n;	
 	/* Generates a random number */
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-
         /* Check the last digit of n */
 	if ((n % 10) > 5)
 	{
