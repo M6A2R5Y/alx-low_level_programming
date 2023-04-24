@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
 	/* int initializes the number n*/
 	int n;
@@ -13,11 +13,11 @@ int main()
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 0)
+	if (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
-	else (n < 0)
+	if (n < 0)
 	{
 		printf("%d is negative\n", n); 
 	}
