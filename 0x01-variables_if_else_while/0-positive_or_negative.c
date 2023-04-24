@@ -6,7 +6,7 @@ int main(void)
 {
 	/* int initializes the number n*/
 	int n;
-	srand(time(0)\n);
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
