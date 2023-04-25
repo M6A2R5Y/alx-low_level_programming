@@ -1,18 +1,19 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _putchar - writes a character to stdout
+ * @c: the character to print
  *
- * This function writes the character c to the standard output (stdout). It takes a
- * single argument, which is the character to print.
- *
- * Return: On success, the function returns 1. On error, -1 is returned and the
- * errno variable is set appropriately to indicate the error.
+ * Description: This function writes the character 'c' to the standard output.
+ * Return: On success, the number of bytes written is returned.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c)
 {
-    /* Use the write system call to write the character to stdout */
-    return (write(1, &c, 1));
+	return (write(STDOUT_FILENO, &c, 1));
 }
+
+#endif /* MAIN_H */
