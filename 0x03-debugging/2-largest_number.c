@@ -8,27 +8,26 @@
 * Return: largest number
 */
 int largest_number(int a, int b, int c)
-{
-    int largest;
-
-    /* Check which number is the largest */
-    if (a > b && a > c)
-    {
+{	
+	int largest;
+	/* Check which number is the largest */
+	if (a > b && a > c)
+	{
         largest = a;
-    }
-    else if (a > b && c > a)
-    {
-        largest = c;
-    }
-    else if (b > c)
-    {
-        largest = b;
-    }
-    else
-    {
-        largest = c;
-    }
+	}
+        else if (a > b && c > a)
+	{
+        	largest = c;
+	}
+	else if (b > c)
+	{
+        	largest = b;
+	}
+	else
+	{
+        	largest = c;
+	}
 
-    /* Return the largest number */
-    return (largest);
+	/* Return the largest number */
+	return (largest);
 }
