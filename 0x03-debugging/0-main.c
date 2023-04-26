@@ -3,15 +3,14 @@
 /**
  * main - Calls the positive_or_negative function to test a number.
  *
- * Return: Always 0 Indicating Success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-        /* Initialize i to 0 */
-        i = 0;
-        /* Call the function with i as argument */
-        positive_or_negative(i);
-        /* Return 0 to indicate successful execution */
-        return (0);
+        int i;
+
+        i = 0; /* Initialize i to 0 */
+        positive_or_negative(i); /* Call the function with i as argument */
+
+        return (0); /* Return 0 to indicate successful execution */
 }
