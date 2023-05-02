@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int i, len;
 	 /* find length of the string */
-	for (len = 0; str[len] != '\0')
+	for (len = 0; str[len] != '\0';)
 	{
 		len++; 
 	}
@@ -30,4 +30,4 @@ void puts_half(char *str)
 	}
 	/* print newline character */
 	putchar('\n');
-}
+i}
