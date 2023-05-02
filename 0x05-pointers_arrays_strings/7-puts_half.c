@@ -30,4 +30,4 @@ void puts_half(char *str)
 	}
 	/* print newline character */
 	putchar('\n');
-i}
+}
