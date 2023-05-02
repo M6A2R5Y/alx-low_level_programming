@@ -1,5 +1,5 @@
 # include <stdio.h>
-#include "main.h"
+
 /**
  * reset_to_98 updates the value of an integer to 98
  * n is a pointer to an int to update
