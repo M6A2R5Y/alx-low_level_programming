@@ -11,10 +11,16 @@ void print_array(int *a, int n)
 	int i;
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[i]);  // print the current element
-	        if (i != n - 1)// check if the current element is the last element
-			printf(", ");// if it is not the last element, print a comma and a space
+		/* print the current element */
+		printf("%d", a[i]);
+		/* check if the current element is the last element */
+	        if (i != n - 1)
+			/* if it is not the last element, print a comma and a space
+ */
+			printf(", ");
 	        
 	}
-	printf("\n");// print a new line at the end
+	/* print a new line at the end
+ */
+	printf("\n");
 }	
