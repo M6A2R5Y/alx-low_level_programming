@@ -1,4 +1,5 @@
-#include "stdio.h"
+#include <stdio.h>
+void puts2(char *)
 
 /**
  * main - check the code
