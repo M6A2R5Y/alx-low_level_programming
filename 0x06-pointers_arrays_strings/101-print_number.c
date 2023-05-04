@@ -8,39 +8,19 @@
 
 void print_number(int n)
 {
-	int div;
-	int mod;
-	int charCount = 0;
-	/* if n is negative, print a '-' sign and change n to its positive value */
+	unsigned int n1;
+	n1 = n;
+	/* If n is negative, print a '-' and convert n to a positive number */
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n1 = -n;
 	}
-	/* if n is 0, print a '0' character */
-	if (n == 0)
+	/* Recursively print the digits of n1 by dividing it by 10 */
+	if (n1 / 10 != 0)
 	{
-		_putchar('0');
-		return;
+		print_number(n1 / 10);
 	}
-	/* find the number of digits in n */
-	div = n;
-	while (div != 0);
-	{
-		div /= 10;
-		charCount++;
-	}
-	/* print each digit of n */
-	while (charCount > 0)
-	{
-		div = 1;
-		for (int i = 1; i < charCount; i++)
-		{
-			div *= 10;
-		}
-		mod = n / div;
-		_putchar(mod + '0');
-		n -= mod * div;
-		charCount--;
-	}
+	/* Print the last digit of n1 as a character */
+	_putchar((n1 % 10) + '0');
 }
