@@ -1,20 +1,17 @@
 #include <stdio.h>
-
 int main(void)
 {
-	/* Declare integer variables n, m, and pointer p*/
 	int n;
-	int m[5];
+	int a[5];
 	int *p;
-	/* Assign the integer value 1024 to the element at index 2 of array m */
-	m[2] = 1024;
-	/* Assign the address of n to the pointer p */
+	/* assign 1024 to the third element of the array a */
+	a[2] = 1024;
+	/* make pointer p point to the address of n */
 	p = &n;
-	/* Assign the integer value 98 to the memory location pointed to by p */
-	/* New line of code */
-	p = 98;
-	/* Print the value stored in element at index 2 of array m */
-	printf("m[2] = %d\n", m[2]);
-	/* Return 0 to indicate successful execution of the function */
+	/* store the value 98 at the address p + 5, which is equivalent to the address of a[2] */
+	(p + 5) = 98;
+	/*  ...so that this prints 98\n */
+	/* print the third element of array a, which now contains the value 98 */
+	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
