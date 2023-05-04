@@ -24,5 +24,37 @@ char *cap_string(char *s);
 
 /* Encode a string using the "leet" code */
 char *leet(char *s);
+/**
+ * rot13 - encodes a string into rot13
+ * @s: string to be encoded
+ *
+ * Return: pointer to encoded string
+ */
+char *rot13(char *s);
 
+/**
+ * print_number - prints an integer
+ * @n: integer to be printed
+ *
+ * Return: void
+ */
+void print_number(int n);
+/**
+ * infinite_add - adds two numbers
+ * @n1: first number to be added
+ * @n2: second number to be added
+ * @r: buffer to store result
+ * @size_r: size of buffer
+ *
+ * Return: pointer to result or 0 if result cannot be stored in r
+ */
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
+/**
+ * print_buffer - prints a buffer
+ * @b: buffer to be printed
+ * @size: size of buffer
+ *Return: void
+ */
+void print_buffer(char *b, int size);
 #endif /* MYSTRING_H */
