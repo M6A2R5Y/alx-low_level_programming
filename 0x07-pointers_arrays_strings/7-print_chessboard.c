@@ -2,23 +2,15 @@
 #include <unistd.h>
 void print_chessboard(char (*a)[8])
 {
-	int i, j;
-	/* Buffer to hold each character and a space */
-	char buffer[2];
-	/* Loop over each row of the chessboard */
+	int i;
+	int j;
 	for (i = 0; i < 8; i++)
 	{
 		/* Loop over each column of the current row */
 		for (j = 0; j < 8; j++)
 		{
-			/* Copy the current character to the buffer */
-			buffer[0] = a[i][j];
-			/* Add a space after the character */
-			buffer[1] = ' ';
-			/* Write the buffer to standard output */
-			write(STDOUT_FILENO, buffer, 2);
+			_putchar(a[i][j]);
 		}
-		/* Write a newline character to separate rows */
-		write(STDOUT_FILENO, "\n", 1);
+		_putchar('\n');
 	}
-}	
+}
