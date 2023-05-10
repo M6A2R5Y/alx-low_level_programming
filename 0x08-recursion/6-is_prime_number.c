@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-int actual_prime(int n, int i);
+
 /**
  * is_prime_number - Determines if an integer is a prime number.
  * @n: Number to evaluate.
@@ -8,6 +8,7 @@ int actual_prime(int n, int i);
  * Return: 1 if n is a prime number, 0 if not.
  */
 int is_prime_number(int n)
+int i;
 {
 	if (n <= 1)
 	{
