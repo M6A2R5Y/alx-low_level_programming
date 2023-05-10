@@ -1,10 +1,6 @@
 #include "main.h"
 #include <unistd.h>
 
-void _putchar(char c)
-{
-	write(1, &c, 1);
-}
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
