@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/* calculates the length of a string recursively. It takes a pointer to a character (char*) as its parameter, representing the string whose length needs to be determined */
+/* calculates the length of a string recursively */
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
