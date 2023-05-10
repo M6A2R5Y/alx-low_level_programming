@@ -1,6 +1,6 @@
 #include "main.h"
 #include <unistd.h>
-
+/* function recursively prints a string s in reverse order */
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
