@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+/* Forward declaration */
+int actual_prime(int n, int i);
 /**
  * is_prime_number - Determines if an integer is a prime number.
  * @n: Number to evaluate.
