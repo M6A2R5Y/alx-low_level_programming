@@ -19,17 +19,3 @@ void _puts(char *str)
 	/* Print a new line character after printing the string */
 	putchar('\n');
 }
-/**
- * main - Entry point
- *
- * This is the main function of the program. It calls the _puts function
- * to print the string "Programming is like building a multilingual puzzle".
- *
- * Return:
- *     Always 0 (Success).
- */
-int main(void)
-{
-	_puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-}
