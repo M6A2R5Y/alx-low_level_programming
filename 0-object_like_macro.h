@@ -1,3 +1,5 @@
+#ifndef SIZE_H
+#define SIZE_H
 /*
  * object_like_macro.h
  *
@@ -7,12 +9,6 @@
  *
  */
 
-#ifndef OBJECT_LIKE_MACRO_H
-#define OBJECT_LIKE_MACRO_H
-
-/*
- * SIZE is a macro that expands to the value 1024.
- */
 #define SIZE 1024
 
 #endif
