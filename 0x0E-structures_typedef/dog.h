@@ -13,7 +13,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-};
+}
 
 /**
  * dog_t - typedef for struct dog
@@ -31,5 +31,4 @@ void free_dog(dog_t *d);
 char *_strcpy(char *dest, char *src);
 /* This function gets the length of a string.*/
 int _strlen(char *s);
-
 #endif
