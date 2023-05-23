@@ -15,16 +15,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	/* Allocate memory for a new dog. */
-	dog_t *new_dog = malloc(sizeof(dog_t));
-	if (new_dog == NULL)
+	dog_t *newDog = malloc(sizeof(dog_t));
+	if (newDog == NULL)
 	{
 		return (NULL);
 	}
-	/* Copy the name and owner strings. */
-	new_dog->name = strdup(name);
-	new_dog->owner = strdup(owner);
-	/* Set the age. */
-	new_dog->age = age;
-	/* Return the new dog. */
-	return new_dog;
+	int nameLen = strlen(name);
+	int ownerLen = strlen(owner);
+	newDog->name = malloc(sizeof(char) * (nameLen + 1));
+	newDog->owner = malloc(sizeof(char) * (ownerLen + 1));
+	if (newDog->name == NULL || newDog->owner == NULL)
+	{
+		free(newDog->name);
+		free(newDog->owner);
+		free(newDog);
+		return (NULL);
+	}
+	strncpy(newDog->name, name, nameLen + 1);
+	strncpy(newDog->owner, owner, ownerLen + 1);
+	newDog->age = age;
+	return newDog;
 }
