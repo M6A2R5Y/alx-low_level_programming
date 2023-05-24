@@ -5,6 +5,7 @@
  * @array: Pointer to the array.
  * @size: The size of the array.
  * @action: Pointer to the function to be executed.
+ * Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
@@ -15,7 +16,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		return;
 	}
 	/* Iterate over the array elements and execute the provided function on each element */
-	for (size_t i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		action(array[i]);
 	}
