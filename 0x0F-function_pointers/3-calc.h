@@ -3,8 +3,8 @@
 
 /**
  * struct op - A struct op.
- * @op: The operator.
- * @f: The associated function.
+ * @op:is The operator.
+ * @f: is The associated function.
  */
 typedef struct op
 {
@@ -16,8 +16,8 @@ typedef struct op
 op_t;
 /**
  * op_add - Returns the sum of two numbers.
- * @a: The first number.
- * @b: The second number.
+ * @a:Is The first number.
+ * @b:Is The second number.
  *
  * Return: The sum of a and b.
  */
