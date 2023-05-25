@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 #include <stdarg.h>
+
 /*
  * print_numbers - Prints a series of numbers, followed by a new line.
  * @separator: The string to be printed between numbers (can be NULL).
@@ -9,28 +9,25 @@
  * If separator is NULL, don’t print it.
  * If n is 0, don’t print anything.
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	/* Check if the separator is NULL. */
-	if (separator == NULL)
-	{
-		return;
-	}
-	va_list args;
+	va_list nums;
 	unsigned int i;
-	va_start(args, n);
+	int num;
+	va_start(nums, n);
 	/* Iterate over the variadic arguments and print them, separated by the separator string. */
 	for (i = 0; i < n; i++)
 	{
-		int num = va_arg(args, int);
+		num = va_arg(nums, int);
 		printf("%d", num);
-		if (separator != NULL && i < n - 1)
+		if (i != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 	}
 	/* Use the va_end macro to destroy the va_list object. */
-	va_end(args);
+	va_end(nums);
 	/* Print a new line. */
 	printf("\n");
 }
