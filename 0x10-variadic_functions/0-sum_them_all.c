@@ -12,11 +12,11 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list nums;
-	unsigned int i, sum = 0;
+	int sum = 0;
 	
 	va_start(nums, n);
 	/* Iterate over the variadic arguments and add them to the sum. */
-	for (i = 0; i < n; i++)
+	for (unsigned int i = 0; i < n; i++)
 	{
 		sum += va_arg(nums, int);
 	}
@@ -24,3 +24,4 @@ int sum_them_all(const unsigned int n, ...)
 	va_end(nums);
 	/* Return the sum. */
 	return (sum)
+}		
