@@ -11,23 +11,16 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	/* Check if the number of arguments is zero, if it is, return 0. */
-	if (n == 0)
-	{
-		return (0);
-	}
-	/* Initialize a variable to store the sum. */
-	int sum = 0;
-	unsigned int i;
-	va_list args;
-	va_start(args, n);
+	va_list ap;
+	unsigned int i, sum = 0;
+	
+	va_start(ap, n);
 	/* Iterate over the variadic arguments and add them to the sum. */
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(args, int);
+		sum += va_arg(ap, int);
 	}
 	/* Use the va_end macro to destroy the va_list object. */
-	va_end(args);
+	va_end(ap);
 	/* Return the sum. */
-	return (sum);
-}
+	return (sum)
