@@ -1,6 +1,13 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 
+int main(int argc, char *argv[]) 
+{
+  int sum = sum_them_all(argc - 1, &argv[1]);
+  printf("The sum is: %d\n", sum);
+  return 0;
+}
+
 /*
  * sum_them_all - Calculates the sum of all its parameters.
  * @n: The number of parameters passed to the function.
