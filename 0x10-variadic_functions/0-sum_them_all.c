@@ -21,18 +21,19 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list nums;
 	int sum = 0;
+	unsigned int i;
 	if (n == 0)
 	{
 		return (0);
 	}
 	va_start(nums, n);
 	/* Iterate over the variadic arguments and add them to the sum. */
-	for (unsigned int i = 0; i < n; i++)
+	for ( i = 0; i < n; i++)
 	{
 		sum += va_arg(nums, int);
 	}
 	/* Use the va_end macro to destroy the va_list object. */
 	va_end(nums);
 	/* Return the sum. */
-	return (sum)
+	return (sum);
 }
