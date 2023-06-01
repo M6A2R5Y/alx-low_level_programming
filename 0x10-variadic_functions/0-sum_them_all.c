@@ -13,6 +13,7 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list nums;
@@ -35,6 +36,8 @@ int sum_them_all(const unsigned int n, ...)
 =======
 #include <stdarg.h>
 
+=======
+>>>>>>> d4750b432835d0a9fd64acc5837e15dfe6ab48b5
 int sum_them_all(const unsigned int n, ...) {
   /*
    * va_list - A variable argument list
