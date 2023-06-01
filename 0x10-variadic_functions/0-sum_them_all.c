@@ -12,8 +12,6 @@
  *   The sum of all the arguments, or 0 if n is 0
  */
 
-#include <stdarg.h>
-
 int sum_them_all(const unsigned int n, ...) {
   /*
    * va_list - A variable argument list
