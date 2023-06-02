@@ -1,6 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
-
+#include <stddef.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -32,5 +32,7 @@ list_t *add_node_end(list_t **head, const char *str);
 
 /* Function to free all the nodes of the linked list */
 void free_list(list_t *head);
+/* _putchar - writes a character to the stdout*/
+int _putchar(char c);
 
 #endif
